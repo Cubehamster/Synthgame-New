@@ -9,6 +9,7 @@ public class PickupScript : MonoBehaviour
     public GameObject GunInHand;
     public GameObject FirstPersonController;
     public GameObject BallSpawner;
+    public GameObject Boss;
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +25,6 @@ public class PickupScript : MonoBehaviour
         FirstPersonController.GetComponent<Shoot>().enabled = true;
         FirstPersonController.GetComponent<AudioSource>().enabled = true;
         BallSpawner.SetActive(true);
+        Boss.GetComponent<OrbetingScript>().enabled = true;
     }
 }

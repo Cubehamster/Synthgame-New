@@ -19,6 +19,7 @@ public class HomingScript : MonoBehaviour
     public int maxRightSpeed;
     public int minRightSpeed;
     private Vector3 flipVector;
+    private bool hasFlipped = false;
 
     private void Awake()
     {
@@ -33,7 +34,7 @@ public class HomingScript : MonoBehaviour
     private void OnCollisionEnter(Collision flip)
     {
         Debug.Log("Collision");
-        if (flip.gameObject.tag.Equals("ground"))
+        if (flip.gameObject.tag.Equals("ground") || transform.position.y < 24)
         {
             flipVector = new Vector3(-1, 1, -1);
             randomAngle = Vector3.Scale(randomAngle, flipVector);
@@ -58,6 +59,16 @@ public class HomingScript : MonoBehaviour
         ball.GetComponent<Rigidbody>().velocity = (ball.transform.forward * speedForward) + (ball.transform.right * (speedRight * (dist + 10) / 100) * randomDirection);
         //ball.GetComponent<Rigidbody>().velocity = ball.transform.forward * speed;
 
+        if ((transform.position.y < 22) && (hasFlipped = false))
+        {
+            flipVector = new Vector3(-1, 1, -1);
+            randomAngle = Vector3.Scale(randomAngle, flipVector);
+            hasFlipped = true;
+        }
+        if (transform.position.y > 22)
+        {
+            hasFlipped = false;
+        }
 
     }
 

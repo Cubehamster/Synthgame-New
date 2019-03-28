@@ -6,6 +6,7 @@ public class BallSpawner : MonoBehaviour
 {
     public Transform target;
     public GameObject theBall;
+    public ParticleSystem spawnFlash;
 
     public int speed;
     public float despawnTime = 10.0f;
@@ -38,6 +39,7 @@ public class BallSpawner : MonoBehaviour
     private void Shooting()
     {
         var ball = Instantiate(theBall, transform.position, transform.rotation);
+        Instantiate(spawnFlash, transform.position, transform.rotation);
         Destroy(ball, despawnTime);
     }
 }
