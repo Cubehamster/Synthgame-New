@@ -24,7 +24,7 @@ public class BallScriptShooter : MonoBehaviour
             destructablesphere.SetActive(true);
             normalSphere.SetActive(false);
             rigidbody.isKinematic = true;
-            GetComponent<BallSpawner2>().enabled = false;
+             GetComponent<BallSpawner2>().enabled = false;
         }
     }
 }

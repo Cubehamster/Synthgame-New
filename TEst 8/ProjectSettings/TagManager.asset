@@ -9,6 +9,8 @@ TagManager:
   - shield
   - Fire
   - Boss
+  - enemy
+  - hp
   layers:
   - Default
   - TransparentFX

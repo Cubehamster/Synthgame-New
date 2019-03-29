@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4928044081012867124}
   m_Layer: 0
   m_Name: Homing Sphere New
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,11 +52,7 @@ MonoBehaviour:
   destructablesphere: {fileID: 8557060248119437949}
   normalSphere: {fileID: 7220395045233734417}
   rigidbody: {fileID: 2203742634067086041}
-  spinSphere: {fileID: 1926599457798602446}
   trail: {fileID: 3060628487378487381}
-  Explosion: {fileID: 391857887901818113, guid: 49a85dadc149e71468128f098b3fbc5e,
-    type: 3}
-  ballcenter: {fileID: 6279664373285852671}
   exploded: 0
 --- !u!54 &2203742634067086041
 Rigidbody:
@@ -96,6 +92,7 @@ MonoBehaviour:
   minForwardSpeed: 5
   maxRightSpeed: 40
   minRightSpeed: 25
+  hasFlipped: 0
 --- !u!114 &7510635434777696163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +117,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6a917f26b2e06174ab1dd4a8087f286e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: afbe369130b7a614e8e82fd63df7bfd2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.672
   m_Pitch: -2.01
@@ -128,7 +125,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 94
+  Priority: 140
   DopplerLevel: 1.53
   MinDistance: 1
   MaxDistance: 500

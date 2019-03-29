@@ -31,6 +31,7 @@ public class BallScriptBullet : MonoBehaviour
             //normalSphere.SetActive(false);
             rigidbody.isKinematic = true;
             //trail.SetActive(false);
+            Destroy(gameObject, 0);
             
         }
     }
