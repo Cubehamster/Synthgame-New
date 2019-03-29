@@ -12,6 +12,7 @@ TagManager:
   - enemy
   - hp
   - center
+  - swarmspawn
   layers:
   - Default
   - TransparentFX

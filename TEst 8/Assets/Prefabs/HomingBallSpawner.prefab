@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5ee959ee3d872468c543f82cf535bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  theBall: {fileID: 1468740865866129778, guid: 30560c761a8cad24cb209b8ad5ed0f30, type: 3}
+  theBall: {fileID: 1468740865866129778, guid: 62d22ffdf412e004485e8c798ca19d25, type: 3}
+  spawnFlash: {fileID: 0}
   speed: 1
   despawnTime: 200
   shootAble: 1

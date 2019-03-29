@@ -9,12 +9,20 @@ public class BallSpawner : MonoBehaviour
     public ParticleSystem spawnFlash;
 
     public int speed;
-    public float despawnTime = 10.0f;
-
     public bool shootAble = true;
     public bool isBallSpawningAllowed = true;
-    public float waitBeforeNextShot = 6.0f;
+    public float waitBeforeNextShot = 0.2f;
     public bool ballCanSpawn = true;
+
+    private void Start()
+    {
+        shootAble = true;
+    }
+
+    private void Awake()
+    {
+        shootAble = true;
+    }
 
     void Update()
     {
@@ -39,7 +47,6 @@ public class BallSpawner : MonoBehaviour
     private void Shooting()
     {
         var ball = Instantiate(theBall, transform.position, transform.rotation);
-        Instantiate(spawnFlash, transform.position, transform.rotation);
-        Destroy(ball, despawnTime);
+        Instantiate(spawnFlash, transform.position, transform.rotation);        
     }
 }
