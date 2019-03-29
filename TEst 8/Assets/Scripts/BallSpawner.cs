@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallSpawner : MonoBehaviour
 {
-    public Transform target;
+    //public Transform target;
     public GameObject theBall;
     public ParticleSystem spawnFlash;
 
@@ -18,7 +18,7 @@ public class BallSpawner : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(target);
+        //transform.LookAt(target);
         if (isBallSpawningAllowed)
         {
             if (shootAble)

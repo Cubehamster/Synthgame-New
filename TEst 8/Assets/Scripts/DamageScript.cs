@@ -32,4 +32,12 @@ public class DamageScript : MonoBehaviour
             }
         }
     }
+
+    private void Update()
+    {
+        if(transform.position.y <= 0f)
+        {
+            TheManager.GetComponent<GameManager>().EndGame();
+        }
+    }
 }

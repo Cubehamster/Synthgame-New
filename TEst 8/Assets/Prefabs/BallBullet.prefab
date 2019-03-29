@@ -244,6 +244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BallBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4d79464399f546447ab05534be530071, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4d79464399f546447ab05534be530071, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.75

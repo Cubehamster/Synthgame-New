@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37fac21d1f093d344816942d1abce94e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TimeOut: 60
+  m_TimeOut: 40
   m_DetachChildren: 0
 --- !u!82 &4928044081012867124
 AudioSource:
@@ -119,14 +119,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: afbe369130b7a614e8e82fd63df7bfd2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.672
-  m_Pitch: -2.01
+  m_Volume: 1
+  m_Pitch: 0.7
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 140
-  DopplerLevel: 1.53
+  Priority: 128
+  DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -163,7 +163,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.498
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -193,7 +193,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.393
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
